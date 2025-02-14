@@ -4,9 +4,44 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+
+	<style>
+		.videoframe {
+			width: 200px;
+			height: 200px;
+		}
+
+		.container {
+			display : flex;
+			width: 100%;
+		}
+	</style>
+	
 </head>
 
 <body>
+	<nav>
+		<ul>
+			<a href="/home">Home</a>
+			<a href="/about">About</a>
+			<a href="/contact">Contact</a>
+		</ul>
+	</nav>
+
+	<div class="container">
+	<video controls class="videoframe">
+		<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+	</video>
+
+	<video controls class="videoframe">
+		<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+	</video>
+
+	<video controls class="videoframe">
+		<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
+	</video>
+		</div>
+	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
